@@ -1,0 +1,22 @@
+REQUIRED:
+#WARNNING: JOB_NAME must be uniq
+<<<<<<< HEAD
+    JOB_NAME: "id-photo-set-scale-16-bs128x8"
+=======
+    JOB_NAME: "nov5-mp-finetune-bs128x8-spltn4-pwconst-10-20-lr6e-3-factor1e-1-wd5e-4-mom9e-1x4-no-fix-bn"
+>>>>>>> 7c67e25902bde5a9e66cd1d4eba8cee223abc125
+    JOB_PASSWD: "newk8s666"
+    UPLOAD_DIR: "upload_folder"
+    WORKER_MIN_NUM: 1
+    WORKER_MAX_NUM: 1
+    GPU_PER_WORKER: 8
+    RUN_SCRIPTS: "${WORKING_PATH}/job.sh"
+
+OPTIONAL:
+    PRIORITY: 5   #[1-5], highest:5
+    DOCKER_IMAGE: "docker.hobot.cc/dlp/mxnet:runtime-cudnn5.1-cuda8.0-centos7"
+<<<<<<< HEAD
+    WALL_TIME: 14400   # max run minutes: default 7200 = 5days
+=======
+    WALL_TIME: 11520   # max run minutes: default 7200 = 5days
+>>>>>>> 7c67e25902bde5a9e66cd1d4eba8cee223abc125
